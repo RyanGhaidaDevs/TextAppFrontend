@@ -7,3 +7,4 @@ Redux is a bit more involved, will refrence old project to see how setup worked,
     -https://www.valentinog.com/blog/redux/
 
 Once Redux is setup we need to hookup some login components and check to see if login works. 
+Need to also start thinking about deploying to Heroku. I want to be able to download the app, logina nd see an index page of anything.
