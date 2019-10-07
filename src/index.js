@@ -1,10 +1,22 @@
 import React from 'react';
-import './index.css';
-import Root from './components/Root';
-import { render } from 'react-dom'
-import { createStore } from 'redux'
+import PropTypes from 'prop-types';
+import { Provider } from 'react-redux';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import App from './App';
+import InputPreview from './components/test';
 
-const store = createStore(rootReducer)
+const Root = ({ store }) => (
+  <Provider store={store}>
+    <Router>
+      <Route exact path="/" component={App} />
+      <Route path="/test" component={InputPreview} />
+    </Router>
+  </Provider>
+)
 
-render(<Root store={store} />, document.getElementById('root'))
+Root.propTypes = {
+  store: PropTypes.object.isRequired
+}
+
+export default Root
 

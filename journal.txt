@@ -14,3 +14,6 @@ redux setup, router check, make login forms, check to see if user can be created
 installing thunk and some other redux libraries to help build app.
 
 remember, we just need to get login working from the frontend.
+
+learning about thunk:
+    - https://github.com/reduxjs/redux-thunk

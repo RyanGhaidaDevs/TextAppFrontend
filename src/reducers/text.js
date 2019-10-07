@@ -1,4 +1,4 @@
-import { SET_TEXT } from '../types/text.js';
+import { ADD_TEXT } from '../types/text.js';
 
 const initialState = {
   text: ""
@@ -6,7 +6,7 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch(action.type) {
-    case SET_TEXT :
+    case ADD_TEXT :
       return {...state, text: action.payload.text}
   default :
     return state
