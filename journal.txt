@@ -10,3 +10,7 @@ Once Redux is setup we need to hookup some login components and check to see if 
 Need to also start thinking about deploying to Heroku. I want to be able to download the app, login and see an index page of anything.
 
 redux setup, router check, make login forms, check to see if user can be created and persisted, decide next after...
+
+installing thunk and some other redux libraries to help build app.
+
+remember, we just need to get login working from the frontend.
