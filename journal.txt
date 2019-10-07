@@ -17,3 +17,24 @@ remember, we just need to get login working from the frontend.
 
 learning about thunk:
     - https://github.com/reduxjs/redux-thunk
+
+There is a lot going on rn, I think we should try to break this up; 
+1.) React Router working within redux
+    -> As far as I understand, we need to simply wrap <Router /> with <Provider store={store} /> so that Router has access to the redux store in all its routes 
+2.) Redux setup 
+    -> The ahrd part here is everyone has different ways of setting up the boiler pate and its hard to stay consistent. MAybe the best solution is to spend a few hours reading and review ONE source for this, Dan Abramov? 
+3.) Thunk, lodash, etc. 
+    -> So there are a bunhc of libraries people use in conjunction with redux and router. Some examples setup redux with these and some dont. The inconsistency is what is making this difficult. Maybe instead of setting it up to add a text we should be setting it up to add a user to login.
+
+Conclusion: Setup using Redux docs, setup for user login NOT for adding a text message. 
+Action item -> Review Redux Docs 
+
+Update: Can we setup redux rect router all at once with login? Should we write a blog on this? 
+    -> https://medium.com/@pamit/building-a-todo-app-using-react-redux-and-rails-fa260ebbdc44
+
+    seems like everyone likes to make ToDo apps.. 
+
+if we set this up maybe we can better understand login after? 
+ ->  https://medium.com/@pamit/todo-list-building-a-react-app-with-rails-api-7a3027907665
+
+ this is awesome, lets build a ToDo app and set it up that way so we have some refrence to add what we actuall want. We can keep the ToDos and make the app work that way. 
